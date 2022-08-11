@@ -1,8 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿//hierarchical inheritance
 using System;
 namespace System
 {
-    public class father
+    public class father   //base class
     {
         public string fathername()
         {
@@ -10,7 +10,7 @@ namespace System
         }
 
     }
-    public class firstson : father
+    public class firstson : father   // first child class
     {
         public string firstname()
         {
@@ -18,7 +18,7 @@ namespace System
         }
 
     }
-    public class secondson : father
+    public class secondson : father  //second child class
     {
         public string secondname()
         {
@@ -26,9 +26,9 @@ namespace System
         }
 
     }
-    class Jato
+    class Jato   //main class
     {
-        public static void Main(String[] args)
+        public static void Main(String[] args)  //from the extecution begins(stores datas here)
         {
             firstson first = new firstson();
             Console.WriteLine("My name is :"+ first.firstname() + Environment.NewLine+ "My father is :" + first.fathername()); //Environment.NewLine helps to get space b/w space/move to next line
